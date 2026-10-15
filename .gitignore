@@ -1,0 +1,11 @@
+# Secrets / local configuration
+.env
+.env.*
+!.env.example
+scan_defaults.json
+PW_ClanDossier.sqlite3
+*.sqlite
+*.sqlite3
+cache/
+__pycache__/
+*.py[cod]

@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: pw-clan-dossier
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python server.py
+    healthCheckPath: /healthz
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: DOSSIER_PASSWORD
+        sync: false
