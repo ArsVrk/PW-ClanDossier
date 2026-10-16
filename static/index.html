@@ -1,0 +1,13 @@
+<!doctype html><html lang="uk"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Чорна Рада</title><link rel="stylesheet" href="/style.css"></head>
+<body><header><div><b>ЧОРНА РАДА</b></div><input id="search" placeholder="Пошук за ніком"></header>
+<main><section id="home"><div class="list-heading"><h1>Персонажі</h1><span id="count">Всього: …</span></div>
+<div class="list-tools">
+ <label>Клас <select id="classFilter"><option value="">Усі класи</option></select></label>
+
+</div>
+<div class="directory-wrap"><table class="directory"><thead><tr><th data-sort="name">Персонаж <span class="sort-mark"></span></th><th data-sort="class_name">Клас <span class="sort-mark"></span></th><th data-sort="level">Рівень <span class="sort-mark"></span></th><th data-sort="max_hp">HP <span class="sort-mark"></span></th><th data-sort="damage_rating">Damage Rating <span class="sort-mark"></span></th><th data-sort="hp_rating">HP Rating <span class="sort-mark"></span></th></tr></thead><tbody id="characters"></tbody></table></div>
+</section>
+<section id="profile" class="hidden"><button id="back">← До списку</button><div id="profileBody"></div></section></main>
+<div id="hoverTip" class="hidden" role="tooltip"></div><script src="/app.js"></script></body></html>
